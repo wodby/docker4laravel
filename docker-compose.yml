@@ -29,6 +29,8 @@ services:
   php:
     image: wodby/laravel-php:$PHP_TAG
     container_name: "${PROJECT_NAME}_php"
+#    env_file:
+#    - .laravel.env
     environment:
       APP_KEY: $APP_KEY
       LARAVEL_APP_DEBUG: 'true'
@@ -61,6 +63,8 @@ services:
 #  queue:
 #    image: wodby/laravel-php:$PHP_TAG
 #    container_name: "${PROJECT_NAME}_queue"
+##    env_file:
+##    - .laravel.env
 #    environment:
 #      SSMTP_MAILHUB: mailhog:1025
 #      #      SSMTP_MAILHUB: opensmtpd:25
@@ -135,6 +139,8 @@ services:
 #  crond:
 #    image: wodby/laravel-php:$PHP_TAG
 #    container_name: "${PROJECT_NAME}_crond"
+##    env_file:
+##    - .laravel.env
 #    environment:
 #      CRONTAB: "0 * * * * echo 'cron test'"
 #    command: sudo crond -f -d 0
