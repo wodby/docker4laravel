@@ -133,7 +133,7 @@ services:
     - "traefik.http.routers.${PROJECT_NAME}_mailhog.rule=Host(`mailhog.${PROJECT_BASE_URL}`)"
 
 #  crond:
-#    image: wodby/php:$PHP_TAG
+#    image: wodby/laravel-php:$PHP_TAG
 #    container_name: "${PROJECT_NAME}_crond"
 #    environment:
 #      CRONTAB: "0 * * * * echo 'cron test'"
