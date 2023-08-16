@@ -137,6 +137,7 @@ services:
 #  crond:
 #    image: wodby/laravel-php:$PHP_TAG
 #    container_name: "${PROJECT_NAME}_crond"
+#    init: true
 ##    env_file:
 ##    - .laravel.env
 #    environment:
@@ -168,6 +169,7 @@ services:
 #  adminer:
 #    container_name: "${PROJECT_NAME}_adminer"
 #    image: wodby/adminer:$ADMINER_TAG
+#    init: true
 #    environment:
 ##      # For PostgreSQL:
 ##      ADMINER_DEFAULT_DB_DRIVER: pgsql
