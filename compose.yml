@@ -30,6 +30,8 @@ services:
 #    env_file:
 #    - .laravel.env
     environment:
+      # By default xdebug extension also disabled.
+      PHP_EXTENSIONS_DISABLE: xhprof
       APP_KEY: $APP_KEY
       LARAVEL_APP_DEBUG: 'true'
       # PHP 8.2+ supports "PHP_MAIL_MIXED_LF_AND_CRLF=On" and does not need dos2unix workaround.
@@ -50,7 +52,6 @@ services:
       PHP_FPM_USER: wodby
       PHP_FPM_GROUP: wodby
 ## Read instructions at https://wodby.com/docs/stacks/laravel/local/#xdebug
-#      PHP_XDEBUG: 1
 #      PHP_XDEBUG_MODE: debug
 #      PHP_XDEBUG_MODE: profile
 #      PHP_XDEBUG_USE_COMPRESSION: false
