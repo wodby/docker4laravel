@@ -35,8 +35,8 @@ services:
       APP_KEY: $APP_KEY
       LARAVEL_APP_DEBUG: 'true'
       PHP_MAIL_MIXED_LF_AND_CRLF: On
-      # Mailhog:
-      MSMTP_HOST: mailhog
+      # Mailpit:
+      MSMTP_HOST: mailpit
       MSMTP_PORT: 1025
 #      # OpenSMTPD:
 #      MSMTP_HOST: opensmtpd
@@ -68,7 +68,7 @@ services:
 ##    env_file:
 ##    - .laravel.env
 #    environment:
-#      SSMTP_MAILHUB: mailhog:1025
+#      SSMTP_MAILHUB: mailpit:1025
 #      #      SSMTP_MAILHUB: opensmtpd:25
 #      PHP_SENDMAIL_PATH: '"/usr/bin/dos2unix -u | /usr/sbin/ssmtp -t -f"'
 #      DB_HOST: $DB_HOST
@@ -131,12 +131,12 @@ services:
 #    labels:
 #    - "traefik.http.routers.${PROJECT_NAME}_apache.rule=Host(`${PROJECT_BASE_URL}`)"
 
-  mailhog:
-    image: mailhog/mailhog
-    container_name: "${PROJECT_NAME}_mailhog"
+  mailpit:
+    image: axllent/mailpit
+    container_name: "${PROJECT_NAME}_mailpit"
     labels:
-    - "traefik.http.services.${PROJECT_NAME}_mailhog.loadbalancer.server.port=8025"
-    - "traefik.http.routers.${PROJECT_NAME}_mailhog.rule=Host(`mailhog.${PROJECT_BASE_URL}`)"
+    - "traefik.http.services.${PROJECT_NAME}_mailpit.loadbalancer.server.port=8025"
+    - "traefik.http.routers.${PROJECT_NAME}_mailpit.rule=Host(`mailpit.${PROJECT_BASE_URL}`)"
 
 #  crond:
 #    image: wodby/laravel-php:$PHP_TAG
