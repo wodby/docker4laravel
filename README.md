@@ -15,31 +15,31 @@ docker4laravel is a set of docker images optimized for Laravel. Use `compose.yml
 
 The Laravel stack consist of the following containers:
 
-| Container       | Versions                    | Image                              | ARM64 support | Enabled by default |
-|-----------------|-----------------------------|------------------------------------|---------------|--------------------|
-| [Nginx]         | 1.27, 1.26                  | [wodby/nginx]                      | ✓             | ✓                  |
-| [Apache HTTPD]  | 2.4                         | [wodby/apache]                     | ✓             |                    |
-| [PHP]           | 8.3, 8.2, 8.1               | [wodby/laravel-php]                | ✓             | ✓                  |
-| Queue           |                             | [wodby/laravel-php]                | ✓             |                    |
-| Crond           |                             | [wodby/laravel-php]                | ✓             |                    |
-| [MariaDB]       | 11, 10.11, 10.6, 10.5, 10.4 | [wodby/mariadb]                    | ✓             | ✓                  |
-| [PostgreSQL]    | 16, 15, 14, 13, 12          | [wodby/postgres]                   | ✓             |                    |
-| [Valkey]        | 7                           | [wodby/valkey]                     | ✓             |                    |
-| [Memcached]     | 1                           | [wodby/memcached]                  |               |                    |
-| [Node.js]       | 20, 18                      | [wodby/node]                       |               |                    |
-| [Varnish]       | 6.0                         | [wodby/varnish]                    | ✓             |                    |
-| [Solr]          | 8                           | [wodby/solr]                       |               |                    |
-| [Elasticsearch] | 7                           | [wodby/elasticsearch]              |               |                    |
-| [Kibana]        | 7                           | [wodby/kibana]                     |               |                    |
-| [OpenSMTPD]     | 7                           | [wodby/opensmtpd]                  | ✓             |                    |
-| Mailpit         | latest                      | [axllent/mailpit]                  |               | ✓                  |
-| [AthenaPDF]     | 2.16.0                      | [arachnysdocker/athenapdf-service] |               |                    |
-| [Rsyslog]       | latest                      | [wodby/rsyslog]                    |               |                    |
-| [Webgrind]      | 1                           | [wodby/webgrind]                   | ✓             |                    |
-| [Xhprof viewer] | latest                      | [wodby/xhprof]                     | ✓             |                    |
-| Adminer         | 4.6                         | [wodby/adminer]                    | ✓             |                    |
-| phpMyAdmin      | latest                      | [phpmyadmin/phpmyadmin]            |               |                    |
-| Traefik         | latest                      | [_/traefik]                        | ✓             | ✓                  |
+| Container       | Versions                | Image                              | ARM64 support | Enabled by default |
+|-----------------|-------------------------|------------------------------------|---------------|--------------------|
+| [Nginx]         | 1.27, 1.26              | [wodby/nginx]                      | ✓             | ✓                  |
+| [Apache HTTPD]  | 2.4                     | [wodby/apache]                     | ✓             |                    |
+| [PHP]           | 8.3, 8.2, 8.1           | [wodby/laravel-php]                | ✓             | ✓                  |
+| Queue           |                         | [wodby/laravel-php]                | ✓             |                    |
+| Crond           |                         | [wodby/laravel-php]                | ✓             |                    |
+| [MariaDB]       | 11.4, 10.11, 10.6, 10.5 | [wodby/mariadb]                    | ✓             | ✓                  |
+| [PostgreSQL]    | 16, 15, 14, 13, 12      | [wodby/postgres]                   | ✓             |                    |
+| [Valkey]        | 7                       | [wodby/valkey]                     | ✓             |                    |
+| [Memcached]     | 1                       | [wodby/memcached]                  |               |                    |
+| [Node.js]       | 20, 18                  | [wodby/node]                       |               |                    |
+| [Varnish]       | 6.0                     | [wodby/varnish]                    | ✓             |                    |
+| [Solr]          | 8                       | [wodby/solr]                       |               |                    |
+| [Elasticsearch] | 7                       | [wodby/elasticsearch]              |               |                    |
+| [Kibana]        | 7                       | [wodby/kibana]                     |               |                    |
+| [OpenSMTPD]     | 7                       | [wodby/opensmtpd]                  | ✓             |                    |
+| Mailpit         | latest                  | [axllent/mailpit]                  |               | ✓                  |
+| [AthenaPDF]     | 2.16.0                  | [arachnysdocker/athenapdf-service] |               |                    |
+| [Rsyslog]       | latest                  | [wodby/rsyslog]                    |               |                    |
+| [Webgrind]      | 1                       | [wodby/webgrind]                   | ✓             |                    |
+| [Xhprof viewer] | latest                  | [wodby/xhprof]                     | ✓             |                    |
+| Adminer         | 4.6                     | [wodby/adminer]                    | ✓             |                    |
+| phpMyAdmin      | latest                  | [phpmyadmin/phpmyadmin]            |               |                    |
+| Traefik         | latest                  | [_/traefik]                        | ✓             | ✓                  |
                                                                                                  
 ## Documentation
 
