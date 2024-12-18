@@ -23,7 +23,7 @@ The Laravel stack consist of the following containers:
 | Queue           |                         | [wodby/laravel-php]                | ✓             |                    |
 | Crond           |                         | [wodby/laravel-php]                | ✓             |                    |
 | [MariaDB]       | 11.4, 10.11, 10.6, 10.5 | [wodby/mariadb]                    | ✓             | ✓                  |
-| [PostgreSQL]    | 16, 15, 14, 13, 12      | [wodby/postgres]                   | ✓             |                    |
+| [PostgreSQL]    | 17, 16, 15, 14, 13      | [wodby/postgres]                   | ✓             |                    |
 | [Valkey]        | 8, 7                    | [wodby/valkey]                     | ✓             |                    |
 | [Memcached]     | 1                       | [wodby/memcached]                  |               |                    |
 | [Node.js]       | 22, 20, 18              | [wodby/node]                       |               |                    |
