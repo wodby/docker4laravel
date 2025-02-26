@@ -26,9 +26,9 @@ The Laravel stack consist of the following containers:
 | [PostgreSQL]    | 17, 16, 15, 14, 13      | [wodby/postgres]                   | ✓             |                    |
 | [Valkey]        | 8, 7                    | [wodby/valkey]                     | ✓             |                    |
 | [Memcached]     | 1                       | [wodby/memcached]                  |               |                    |
-| [Node.js]       | 22, 20, 18              | [wodby/node]                       |               |                    |
+| [Node.js]       | 22, 20, 18              | [wodby/node]                       | ✓             |                    |
 | [Varnish]       | 6.0                     | [wodby/varnish]                    | ✓             |                    |
-| [Solr]          | 9                       | [wodby/solr]                       |               |                    |
+| [Solr]          | 9                       | [wodby/solr]                       | ✓             |                    |
 | [Elasticsearch] | 7                       | [wodby/elasticsearch]              |               |                    |
 | [Kibana]        | 7                       | [wodby/kibana]                     |               |                    |
 | [OpenSMTPD]     | 7                       | [wodby/opensmtpd]                  | ✓             |                    |
