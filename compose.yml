@@ -105,7 +105,7 @@ services:
       NGINX_STATIC_OPEN_FILE_CACHE: "off"
       NGINX_ERROR_LOG_LEVEL: debug
       NGINX_BACKEND_HOST: php
-      NGINX_VHOST_PRESET: php
+      NGINX_VHOST_PRESET: laravel
       NGINX_SERVER_ROOT: /var/www/html/public
     volumes:
     - ./:/var/www/html:cached
