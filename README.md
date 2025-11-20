@@ -14,7 +14,7 @@ docker4laravel is a set of docker images optimized for Laravel. Use
 
 ## Stack
 
-The Laravel stack consist of the following containers:
+The Laravel stack consists of the following containers:
 
 | Container             | Versions                | Image                                     | ARM64 support | Enabled by default |
 |-----------------------|-------------------------|-------------------------------------------|---------------|--------------------|
@@ -23,10 +23,11 @@ The Laravel stack consist of the following containers:
 | [PHP]                 | 8.4, 8.3, 8.2, 8.1      | [wodby/laravel-php]                       | ✓             | ✓                  |
 | Queue                 |                         | [wodby/laravel-php]                       | ✓             |                    |
 | Crond                 |                         | [wodby/laravel-php]                       | ✓             |                    |
-| [MariaDB]             | 11.4, 10.11, 10.6, 10.5 | [wodby/mariadb]                           | ✓             | ✓                  |
-| [PostgreSQL]          | 17, 16, 15, 14, 13      | [wodby/postgres]                          | ✓             |                    |
-| [Valkey]              | 8.1, 8.0, 7             | [wodby/valkey]                            | ✓             |                    |
-| [Memcached]           | 1                       | [wodby/memcached]                         | ✓             |                    |
+| [MariaDB]             | 11.8, 11.4, 10.11, 10.6 | [wodby/mariadb]                           | ✓             | ✓                  |
+| [PostgreSQL]          | 18, 17, 16, 15, 14      | [wodby/postgres]                          | ✓             |                    |
+| [Valkey]              | 9.0, 8.1, 8.0, 7        | [wodby/valkey]                            | ✓             |                    |
+| [Redis]               | 8.2, 8.0, 7.4           | [wodby/redis]                             | ✓             |                    |
+| [Memcached]           | 1.6                     | [wodby/memcached]                         | ✓             |                    |
 | [Node.js]             | 24, 22, 20              | [wodby/node]                              | ✓             |                    |
 | [Varnish]             | 6.0                     | [wodby/varnish]                           | ✓             |                    |
 | [Solr]                | 9                       | [wodby/solr]                              | ✓             |                    |
@@ -101,6 +102,8 @@ This project is licensed under the MIT open source license.
 
 [Valkey]: https://wodby.com/docs/stacks/laravel/containers#valkey
 
+[Redis]: https://wodby.com/docs/stacks/laravel/containers#redis
+
 [Varnish]: https://wodby.com/docs/stacks/laravel/containers#varnish
 
 [Webgrind]: https://wodby.com/docs/stacks/laravel/containers#webgrind
@@ -138,6 +141,8 @@ This project is licensed under the MIT open source license.
 [wodby/solr]: https://github.com/wodby/solr
 
 [wodby/valkey]: https://github.com/wodby/valkey
+
+[wodby/redis]: https://github.com/wodby/redis
 
 [wodby/varnish]: https://github.com/wodby/varnish
 
