@@ -20,7 +20,7 @@ The Laravel stack consists of the following containers:
 |-----------------------|-------------------------|-------------------------------------------|---------------|--------------------|
 | [Nginx]               | 1.29, 1.28              | [wodby/nginx]                             | ✓             | ✓                  |
 | [Apache HTTPD]        | 2.4                     | [wodby/apache]                            | ✓             |                    |
-| [PHP]                 | 8.4, 8.3, 8.2, 8.1      | [wodby/laravel-php]                       | ✓             | ✓                  |
+| [PHP]                 | 8.5, 8.4, 8.3, 8.2, 8.1 | [wodby/laravel-php]                       | ✓             | ✓                  |
 | Queue                 |                         | [wodby/laravel-php]                       | ✓             |                    |
 | Crond                 |                         | [wodby/laravel-php]                       | ✓             |                    |
 | [MariaDB]             | 11.8, 11.4, 10.11, 10.6 | [wodby/mariadb]                           | ✓             | ✓                  |
