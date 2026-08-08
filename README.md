@@ -39,7 +39,7 @@ The Laravel stack consists of the following containers:
 | [Rsyslog]             | latest                  | [wodby/rsyslog]                           | ✓             |                    |
 | [Webgrind]            | 1                       | [wodby/webgrind]                          | ✓             |                    |
 | [Xhprof viewer]       | latest                  | [wodby/xhprof]                            | ✓             |                    |
-| Adminer               | 5                       | [wodby/adminer]                           | ✓             |                    |
+| Adminer               | 6                       | [wodby/adminer]                           | ✓             |                    |
 | phpMyAdmin            | latest                  | [phpmyadmin/phpmyadmin]                   |               |                    |
 | Traefik               | 3                       | [_/traefik]                               | ✓             | ✓                  |
 
