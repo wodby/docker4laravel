@@ -47,7 +47,7 @@ services:
       DB_NAME: $DB_NAME
       PHP_FPM_USER: wodby
       PHP_FPM_GROUP: wodby
-## Read instructions at https://wodby.com/docs/stacks/laravel/local/#xdebug
+## Read instructions at https://wodby.com/docs/1.0/stacks/laravel/local/#xdebug
 #      PHP_XDEBUG_MODE: debug
 #      PHP_XDEBUG_MODE: profile
 #      PHP_XDEBUG_USE_COMPRESSION: false
@@ -57,7 +57,7 @@ services:
     - "host.docker.internal:host-gateway"
     volumes:
     - ./:/var/www/html:cached
-## Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/laravel/local#docker-for-mac
+## Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/laravel/local#docker-for-mac
 #    - backend:/var/www/html
 ## For XHProf and Xdebug profiler traces
 #    - files:/mnt/files
@@ -78,7 +78,7 @@ services:
 #      PHP_FPM_USER: wodby
 #      PHP_FPM_GROUP: wodby
 #      QUEUE_CONNECTION: valkey
-#    ## Read instructions at https://wodby.com/docs/stacks/laravel/local/#xdebug
+#    ## Read instructions at https://wodby.com/docs/1.0/stacks/laravel/local/#xdebug
 #    #      PHP_XDEBUG: 1
 #    #      PHP_XDEBUG_MODE: debug
 #    #      PHP_XDEBUG_MODE: profile
@@ -91,7 +91,7 @@ services:
 #    command: ["php", "artisan", "queue:listen"]
 #    volumes:
 #    - ./:/var/www/html:cached
-#  ## Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/laravel/local#docker-for-mac
+#  ## Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/laravel/local#docker-for-mac
 #  #    - backend:/var/www/html
 #  ## For XHProf and Xdebug profiler traces
 #  #    - files:/mnt/files
@@ -109,7 +109,7 @@ services:
       NGINX_SERVER_ROOT: /var/www/html/public
     volumes:
     - ./:/var/www/html:cached
-## Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/laravel/local#docker-for-mac
+## Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/laravel/local#docker-for-mac
 #    - backend:/var/www/html
     labels:
     - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
@@ -126,7 +126,7 @@ services:
 #      APACHE_DOCUMENT_ROOT: /var/www/html/public
 #    volumes:
 #    - ./:/var/www/html:cached
-### Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/laravel/local#docker-for-mac
+### Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/laravel/local#docker-for-mac
 ##    - backend:/var/www/html
 #    labels:
 #    - "traefik.http.routers.${PROJECT_NAME}_apache.rule=Host(`${PROJECT_BASE_URL}`)"
@@ -149,7 +149,7 @@ services:
 #    command: sudo crond -f -d 0
 #    volumes:
 #    - ./:/var/www/html:cached
-### Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/laravel/local#docker-for-mac
+### Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/laravel/local#docker-for-mac
 ##    - backend:/var/www/html
 
 #  vinyl:

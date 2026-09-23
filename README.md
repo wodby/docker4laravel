@@ -7,7 +7,7 @@
 docker4laravel is a set of docker images optimized for Laravel. Use
 `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4laravel/releases) to spin up local environment on Linux, Mac OS X and Windows.
 
-* Read the docs on [**how to use**](https://wodby.com/docs/stacks/laravel/local#usage)
+* Read the docs on [**how to use**](https://wodby.com/docs/1.0/stacks/laravel/local#usage)
 * Ask questions on [Discord](http://discord.wodby.com/)
 * Ask questions on [Slack](http://slack.wodby.com/)
 * Follow [@wodbycloud](https://twitter.com/wodbycloud) for updates announcements
@@ -16,36 +16,36 @@ docker4laravel is a set of docker images optimized for Laravel. Use
 
 The Laravel stack consists of the following containers:
 
-| Container             | Versions                | Image                                     | ARM64 support | Enabled by default |
-|-----------------------|-------------------------|-------------------------------------------|---------------|--------------------|
-| [Nginx]               | 1.31, 1.30              | [wodby/nginx]                             | ✓             | ✓                  |
-| [Apache HTTPD]        | 2.4                     | [wodby/apache]                            | ✓             |                    |
-| [PHP]                 | 8.5, 8.4, 8.3, 8.2      | [wodby/laravel-php]                       | ✓             | ✓                  |
-| Queue                 |                         | [wodby/laravel-php]                       | ✓             |                    |
-| Crond                 |                         | [wodby/laravel-php]                       | ✓             |                    |
-| [MariaDB]             | 11.8, 11.4, 10.11, 10.6 | [wodby/mariadb]                           | ✓             | ✓                  |
-| [PostgreSQL]          | 18, 17, 16, 15, 14      | [wodby/postgres]                          | ✓             |                    |
-| [Valkey]              | 9.0, 8.1, 8.0, 7        | [wodby/valkey]                            | ✓             |                    |
-| [Redis]               | 8.6, 8.4, 8.2, 7.4      | [wodby/redis]                             | ✓             |                    |
-| [Memcached]           | 1.6                     | [wodby/memcached]                         | ✓             |                    |
-| [Node.js]             | 26, 24, 22              | [wodby/node]                              | ✓             |                    |
-| Vinyl ([Varnish])     | 8.0, 6.0                | [wodby/vinyl]                             | ✓             |                    |
-| [Solr]                | 10, 9                   | [wodby/solr]                              | ✓             |                    |
-| OpenSearch            | 2                       | [opensearchproject/opensearch]            | ✓             |                    |
-| OpenSearch Dashboards | 2                       | [opensearchproject/opensearch-dashboards] | ✓             |                    |
-| [OpenSMTPD]           | 7                       | [wodby/opensmtpd]                         | ✓             |                    |
-| Mailpit               | latest                  | [axllent/mailpit]                         | ✓             | ✓                  |
-| Gotenberg             | latest                  | [gotenberg/gotenberg]                     | ✓             |                    |
-| [Rsyslog]             | latest                  | [wodby/rsyslog]                           | ✓             |                    |
-| [Webgrind]            | 1                       | [wodby/webgrind]                          | ✓             |                    |
-| [Xhprof viewer]       | latest                  | [wodby/xhprof]                            | ✓             |                    |
-| Adminer               | 6                       | [wodby/adminer]                           | ✓             |                    |
-| phpMyAdmin            | latest                  | [phpmyadmin/phpmyadmin]                   |               |                    |
-| Traefik               | 3                       | [_/traefik]                               | ✓             | ✓                  |
+| Container             | Versions                | Image                                     | Enabled by default |
+|-----------------------|-------------------------|-------------------------------------------|--------------------|
+| [Nginx]               | 1.31, 1.30              | [wodby/nginx]                             | ✓                  |
+| [Apache HTTPD]        | 2.4                     | [wodby/apache]                            |                    |
+| [PHP]                 | 8.5, 8.4, 8.3, 8.2      | [wodby/laravel-php]                       | ✓                  |
+| Queue                 |                         | [wodby/laravel-php]                       |                    |
+| Crond                 |                         | [wodby/laravel-php]                       |                    |
+| [MariaDB]             | 11.8, 11.4, 10.11, 10.6 | [wodby/mariadb]                           | ✓                  |
+| [PostgreSQL]          | 18, 17, 16, 15, 14      | [wodby/postgres]                          |                    |
+| [Valkey]              | 9.0, 8.1, 8.0, 7        | [wodby/valkey]                            |                    |
+| [Redis]               | 8.6, 8.4, 8.2, 7.4      | [wodby/redis]                             |                    |
+| [Memcached]           | 1.6                     | [wodby/memcached]                         |                    |
+| [Node.js]             | 26, 24, 22              | [wodby/node]                              |                    |
+| Vinyl ([Varnish])     | 8.0, 6.0                | [wodby/vinyl]                             |                    |
+| [Solr]                | 10, 9                   | [wodby/solr]                              |                    |
+| OpenSearch            | 2                       | [opensearchproject/opensearch]            |                    |
+| OpenSearch Dashboards | 2                       | [opensearchproject/opensearch-dashboards] |                    |
+| [OpenSMTPD]           | 7                       | [wodby/opensmtpd]                         |                    |
+| Mailpit               | latest                  | [axllent/mailpit]                         | ✓                  |
+| Gotenberg             | latest                  | [gotenberg/gotenberg]                     |                    |
+| [Rsyslog]             | latest                  | [wodby/rsyslog]                           |                    |
+| [Webgrind]            | 1                       | [wodby/webgrind]                          |                    |
+| [Xhprof viewer]       | latest                  | [wodby/xhprof]                            |                    |
+| Adminer               | 6                       | [wodby/adminer]                           |                    |
+| phpMyAdmin            | latest                  | [phpmyadmin/phpmyadmin]                   |                    |
+| Traefik               | 3                       | [_/traefik]                               | ✓                  |
 
 ## Documentation
 
-Full documentation is available at https://wodby.com/docs/stacks/laravel/local
+Full documentation is available at https://wodby.com/docs/1.0/stacks/laravel/local
 
 ## Image tags
 
@@ -66,9 +66,6 @@ uses semantic product versions, and third-party images follow their own tag form
 See the [image revision policy](https://github.com/wodby/images#image-revisions)
 for details.
 
-Test fixtures use `*_IMAGE_REVISION` environment variables for the image release
-suffix.
-
 ## Maintenance
 
 We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4laravel/releases) for full changelog and update instructions. Most of routine updates for images and this project performed by [the bot](https://github.com/wodbot) via scripts located at [wodby/images](https://github.com/wodby/images).
@@ -85,37 +82,37 @@ We regularly update images used in this stack and release them together, see [re
 
 This project is licensed under the MIT open source license.
 
-[Apache HTTPD]: https://wodby.com/docs/stacks/laravel/containers#apache
+[Apache HTTPD]: https://wodby.com/docs/1.0/stacks/laravel/containers#apache
 
-[AthenaPDF]: https://wodby.com/docs/stacks/laravel/containers#athenapdf
+[AthenaPDF]: https://wodby.com/docs/1.0/stacks/laravel/containers#athenapdf
 
-[MariaDB]: https://wodby.com/docs/stacks/laravel/containers#mariadb
+[MariaDB]: https://wodby.com/docs/1.0/stacks/laravel/containers#mariadb
 
-[Memcached]: https://wodby.com/docs/stacks/laravel/containers#memcached
+[Memcached]: https://wodby.com/docs/1.0/stacks/laravel/containers#memcached
 
-[Nginx]: https://wodby.com/docs/stacks/laravel/containers#nginx
+[Nginx]: https://wodby.com/docs/1.0/stacks/laravel/containers#nginx
 
-[Node.js]: https://wodby.com/docs/stacks/laravel/containers#nodejs
+[Node.js]: https://wodby.com/docs/1.0/stacks/laravel/containers#nodejs
 
-[OpenSMTPD]: https://wodby.com/docs/stacks/laravel/containers#opensmtpd
+[OpenSMTPD]: https://wodby.com/docs/1.0/stacks/laravel/containers#opensmtpd
 
-[PHP]: https://wodby.com/docs/stacks/laravel/containers#php
+[PHP]: https://wodby.com/docs/1.0/stacks/laravel/containers#php
 
-[PostgreSQL]: https://wodby.com/docs/stacks/laravel/containers#postgresql
+[PostgreSQL]: https://wodby.com/docs/1.0/stacks/laravel/containers#postgresql
 
-[Rsyslog]: https://wodby.com/docs/stacks/laravel/containers#rsyslog
+[Rsyslog]: https://wodby.com/docs/1.0/stacks/laravel/containers#rsyslog
 
-[Solr]: https://wodby.com/docs/stacks/solr
+[Solr]: https://wodby.com/docs/1.0/stacks/solr
 
-[Valkey]: https://wodby.com/docs/stacks/laravel/containers#valkey
+[Valkey]: https://wodby.com/docs/1.0/stacks/laravel/containers#valkey
 
-[Redis]: https://wodby.com/docs/stacks/laravel/containers#redis
+[Redis]: https://wodby.com/docs/1.0/stacks/laravel/containers#redis
 
-[Varnish]: https://wodby.com/docs/stacks/laravel/containers#varnish
+[Varnish]: https://wodby.com/docs/1.0/stacks/laravel/containers#varnish
 
-[Webgrind]: https://wodby.com/docs/stacks/laravel/containers#webgrind
+[Webgrind]: https://wodby.com/docs/1.0/stacks/laravel/containers#webgrind
 
-[XHProf viewer]: https://wodby.com/docs/stacks/laravel/containers#xhprof-viewer
+[XHProf viewer]: https://wodby.com/docs/1.0/stacks/laravel/containers#xhprof-viewer
 
 [_/traefik]: https://hub.docker.com/_/traefik
 
