@@ -8,6 +8,7 @@ docker4laravel is a set of docker images optimized for Laravel. Use
 `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4laravel/releases) to spin up local environment on Linux, Mac OS X and Windows.
 
 * Read the docs on [**how to use**](https://wodby.com/docs/1.0/stacks/laravel/local#usage)
+* Deploy to production with the [Laravel stack on Wodby](https://wodby.com/deploy-laravel)
 * Ask questions on [Discord](http://discord.wodby.com/)
 * Ask questions on [Slack](http://slack.wodby.com/)
 * Follow [@wodbycloud](https://twitter.com/wodbycloud) for updates announcements
@@ -69,6 +70,21 @@ for details.
 ## Maintenance
 
 We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4laravel/releases) for full changelog and update instructions. Most of routine updates for images and this project performed by [the bot](https://github.com/wodbot) via scripts located at [wodby/images](https://github.com/wodby/images).
+
+## Deploy to production
+
+docker4laravel is for local development with Docker Compose. To run the same stack in production, use the [Laravel stack on Wodby](https://wodby.com/deploy-laravel).
+
+It runs your Laravel repository on Kubernetes with the same `wodby/laravel-php` image you use locally, behind Nginx, with MariaDB, Valkey, and Mailpit. You choose where it runs: Wodby Cloud, a Kubernetes cluster in your own cloud account, or a single server of your own.
+
+* Start from the Laravel boilerplate, or connect your own repository
+* Migrations run after every deployment
+* The application key is generated for you, and debug mode is on in development environments only
+* Uploaded files are kept on a shared files volume
+* CI/CD is built in
+* A free plan is available, including on a server of your own
+
+Read the [Laravel stack guide](https://wodby.com/docs/2.0/stacks/catalog/laravel/), or see [Laravel hosting on Wodby](https://wodby.com/laravel-hosting) and [pricing](https://wodby.com/pricing).
 
 ## Other Docker4x projects
 
